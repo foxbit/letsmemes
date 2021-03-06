@@ -11,8 +11,9 @@ input[type="radio"]:checked + label img{
     border: solid #f00;
 }
 .container{
-    display: flex;
+    display:inline;
     justify-content: space-around;
+
 }
 
 .controles{
@@ -33,7 +34,6 @@ input[type="radio"]:checked + label img{
     text-align: center;
     box-sizing: border-box;
     word-break: break-word;
-    display: flexbox;
     position: relative;
 }
 
@@ -56,13 +56,10 @@ input[type="radio"]:checked + label img{
     word-break: break-word;
 }
 
-.cor{
-    margin-top: 20px;
-}
 
 textarea{
-    width: 500px;
-    height: 200px;
+    width: 400px;
+    height: 100px;
     resize: none;
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -70,11 +67,13 @@ textarea{
 
 .download{
     display: block;
+    width: 200px;
+    height: 50px;
     background-color: rgba(2, 2, 226, 0.667);
     border: 0;
     outline: 0;
     padding: 10px 5px;
-    color: rgba(12, 8, 31, 0.667);
+    color: rgba(255, 255, 255, 0.667);
     font-size: 20px;
     cursor: pointer;
 }

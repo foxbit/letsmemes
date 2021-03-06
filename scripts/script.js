@@ -1,11 +1,10 @@
 let opcaoImagem = document.querySelectorAll('#img1,#img2,#img3');
-let resultadoBG = document.querySelector('#divResultadoBG');
-let resultadoUp = document.querySelector('#divResultadoUp');
-let resultadoDown = document.querySelector('#divResultadoDown');
-let inputColorText = document.querySelector("input[type='color']");
-let textBoxUp = document.querySelector('#textBoxUp');
-let textBoxDown = document.querySelector('#textBoxDown');
-let btnDownload = document.querySelector('.download');
+let resultadoBG = document.getElementById('divResultadoBG');
+let resultadoUp = document.getElementById('divResultadoUp');
+let resultadoDown = document.getElementById('divResultadoDown');
+let textBoxUp = document.getElementById('textBoxUp');
+let textBoxDown = document.getElementById('textBoxDown');
+let btnDownload = document.getElementById('downloadButton');
 
 
 function selecionarFundo() {
@@ -17,11 +16,7 @@ function selecionarFundo() {
 opcaoImagem.forEach(function (elemento) {
     elemento.addEventListener('input', selecionarFundo);
 })
-/*
-inputColorText.addEventListener('input', function () {
-    resultado.style.color = this.value;
-})
-*/
+
 textBoxUp.addEventListener('input', function () {
     resultadoUp.innerHTML = "<span class='textMeme'>" + this.value + "<span>";
 })
@@ -31,7 +26,7 @@ textBoxDown.addEventListener ('input', function () {
 })
 
 function download() {
-    domtoimage.toPng(resultado)
+    domtoimage.toPng(resultadoBG, /*{height: 800, width:800}* este parâmtro está criando uma imagem maior porém os elementos não estao acompanhando o tamanho do canvas*/)
         .then(function (urlsaida) {
             let link = document.createElement('a');
             link.download = 'saida.png';

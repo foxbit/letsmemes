@@ -17,6 +17,13 @@ Para atualizar o GIT: git push -u origin main -->
 
     <div class="container">
 
+        <div id="divResultadoBG" class="resultadoBG">
+            <div id="divResultadoUp" class="resultadoUp">
+            </div>
+            <div id="divResultadoDown" class="resultadoDown">
+            </div>
+        </div>
+
         <div class="controles">
             <h2>Selecione uma imagem de Fundo</h2>
 
@@ -40,24 +47,13 @@ Para atualizar o GIT: git push -u origin main -->
             <textarea id="textBoxUp">Digite o texto do topo</textarea>
             <br>
             <textarea id="textBoxDown">Digite o texto da base</textarea>
-            <div class="cor">
-                <label for="">Cor do Texto</label>
-                <input type="color">
+
             </div>
 
 
         </div>
 
-        <div id="divResultadoBG" class="resultadoBG">
-            <div id="divResultadoUp" class="resultadoUp">
-            </div>
-            <div id="divResultadoDown" class="resultadoDown">
-            </div>
-        </div>
-
-        <button class="download" onclick="download()">Download</button>
-
-
+        <button id="downloadButton" class="download" onclick="download()">Download</button>
 
     </div>
 
