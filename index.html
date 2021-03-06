@@ -1,0 +1,70 @@
+<!-- 
+Para rodar o live server: CTRL SHIFT P  e escrever live server
+Para atualizar o GIT: git push -u origin main -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Criador de Arte Digital</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="controles">
+            <h2>Selecione uma imagem de Fundo</h2>
+
+            <div class="imagens-fundo">
+                <input type="radio" name="imagem-fundo" id="img1" data-caminho="images/meme-01.jpg">
+                <label for="img1">
+                    <img src="images/meme-01.jpg" class="miniatura">
+                </label>
+
+                <input type="radio" name="imagem-fundo" id="img2" data-caminho="images/meme-02.jpg">
+                <label for="img2">
+                    <img src="images/meme-02.jpg" class="miniatura">
+                </label>
+
+                <input type="radio" name="imagem-fundo" id="img3" data-caminho="images/meme-03.jpg">
+                <label for="img3">
+                    <img src="images/meme-03.jpg" class="miniatura">
+                </label>
+            </div>
+
+            <textarea id="textBoxUp">Digite o texto do topo</textarea>
+            <br>
+            <textarea id="textBoxDown">Digite o texto da base</textarea>
+            <div class="cor">
+                <label for="">Cor do Texto</label>
+                <input type="color">
+            </div>
+
+
+        </div>
+
+        <div id="divResultadoBG" class="resultadoBG">
+            <div id="divResultadoUp" class="resultadoUp">
+            </div>
+            <div id="divResultadoDown" class="resultadoDown">
+            </div>
+        </div>
+
+        <button class="download" onclick="download()">Download</button>
+
+
+
+    </div>
+
+
+
+    <script src="/scripts/dom-to-img.js"></script>
+    <script src="/scripts/script.js"></script>
+</body>
+
+</html>
