@@ -1,20 +1,67 @@
+.header {
+    background-color: dimgray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+    align-items: center;
+
+}
+
+header a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 20px;
+    list-style: none;
+
+}
+
+
 *{ margin: 0; padding: 0;}
 input[type="radio"]{
     display: none;
 }
 
 body {
-    background-color: rgb(90, 90, 90);
+    background-color: rgb(223, 218, 192);
 }
 
 input[type="radio"]:checked + label img{
     border: solid rgb(56, 56, 56);
 }
-.container{
-    display:inline;
-    justify-content: space-around;
 
+.container1{
+    display:flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
 }
+
+.container1 > div {
+    flex: 1 1;
+    margin: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas:
+      ". . ."
+      ". . .";
+    margin: 0 auto;
+     
+  }
 
 .controles{
     display: block;
@@ -59,9 +106,11 @@ input[type="radio"]:checked + label img{
 
 
 textarea{
-    width: 400px;
-    height: 100px;
+    width: 100%;
+    height: 80px;
     resize: none;
+    padding: 10px;
+    margin: 5px;
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
