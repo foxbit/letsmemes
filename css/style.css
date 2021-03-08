@@ -4,6 +4,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px;
+    
     color: white;
     align-items: center;
 
@@ -22,58 +23,72 @@ header a {
 .menu li {
     margin-left: 20px;
     list-style: none;
-
 }
 
-
-*{ margin: 0; padding: 0;}
-input[type="radio"]{
+input[type="radio"] {
     display: none;
 }
 
 body {
     background-color: rgb(223, 218, 192);
+
+    margin: 0;
 }
 
-input[type="radio"]:checked + label img{
+input[type="radio"]:checked+label img {
     border: solid rgb(56, 56, 56);
 }
 
-.container1{
-    display:flex;
-    flex-wrap: wrap;
+.sectionmeme {
+    padding: 10px;
     max-width: 800px;
-    margin: 0 auto;
-}
-
-.container1 > div {
-    flex: 1 1;
-    margin: 10px;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 10px 10px;
-    grid-template-areas:
-      ". . ."
-      ". . .";
-    margin: 0 auto;
-     
-  }
-
-.controles{
     display: block;
+    margin: 0 auto;
 }
-.miniatura{
+
+.sectiontexto {
+    padding: 10px;
+    max-width: 400px;
+    display: grid;
+    margin: 0 auto;
+    
+}
+
+
+.flex {
+    padding: 10px;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+
+.flex img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+.flex > div {
+    width: 190px;
+    padding: 5px;
+}
+
+.controles {
+    display: grid;
+}
+
+.miniatura {
     display: inline-block;
     margin: 10px;
     width: 100px;
     height: 100px;
 }
 
-.resultadoBG{
+.resultadoBG {
+    margin: 0 auto;
     width: 400px;
     height: 400px;
     background-size: cover;
@@ -82,42 +97,41 @@ input[type="radio"]:checked + label img{
     box-sizing: border-box;
     word-break: break-word;
     position: relative;
-    background-image:url(/images/placeholder.jpg);
+    background-image: url(/images/placeholder.jpg);
 }
 
 .resultadoUp {
     padding: 5px;
     width: 100%;
     box-sizing: border-box;
-  }
+}
 
 .resultadoDown {
-    padding:5px;
+    display: block;
+    padding: 5px;
     width: 100%;
     box-sizing: border-box;
     position: absolute;
-    bottom:0;
+    bottom: 0;
     left: 0;
-  }
+}
 
-.resultado *{
+.resultado * {
     word-break: break-word;
 }
 
 
-textarea{
-    width: 100%;
+textarea {
+    width: 380px;
     height: 80px;
     resize: none;
     padding: 10px;
-    margin: 5px;
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.download{
-    display: block;
-    width: 200px;
+.download {
+
     height: 50px;
     background-color: rgba(2, 2, 226, 0.667);
     border: 0;
@@ -128,7 +142,7 @@ textarea{
     cursor: pointer;
 }
 
-.textMeme{
+.textMeme {
     color: rgba(255, 255, 255, 1);
     font-size: 40px;
     font-family: Impact, fantasy;
@@ -136,4 +150,3 @@ textarea{
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
 }
-

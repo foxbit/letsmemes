@@ -25,7 +25,7 @@ opcaoImagem.forEach(function (elemento) {
 window.addEventListener('load', function(){
     document.getElementById('inputUploadImage').addEventListener('change', function(){
         if (this.files && this.files[0]) {
-            var img = document.querySelector('img');
+            var img = document.getElementById('divResultadoBG');
             img.src = URL.createObjectURL(this.files[0]);
             resultadoBG.style.backgroundImage = `url(${img.src})`;
         }
