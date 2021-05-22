@@ -10,7 +10,7 @@ Para atualizar o GIT: git push -u origin main -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Criador de Arte Digital</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -30,96 +30,47 @@ Para atualizar o GIT: git push -u origin main -->
     </header>
     
     
-    <section class="sectionmeme">
+    <section class="flex">
         <!-- Contêiner de visualização do meme -->
+
         <div id="divResultadoBG" class="resultadoBG">
             <div id="divResultadoUp" class="resultadoUp">
             </div>
             <div id="divResultadoDown" class="resultadoDown">
             </div>
         </div>
-    </section>
 
-    <section class="sectiontexto">
+
+    <div class="sectiontexto">
          <!-- Inputs dos textos -->
 
          <textarea id="textBoxUp" placeholder="Digite o texto do topo"></textarea>
          
          <textarea id="textBoxDown" placeholder="Digite o texto da base"></textarea>
          
-         <button id="downloadButton" class="download" onclick="download()">Download</button>
+         <button id="downloadButton" onclick="download()">Download</button>
            
-    </section>
+    </div>
 
-    <section class="flex">
-        <div>
-            <img src="/images/placeholder.jpg">
-            <p>Selecionar</p>
-        </div>
-        <div>
-            <img src="/images/placeholder.jpg">
-            <p>Selecionar</p>
-        </div>
-        <div>
-            <img src="/images/placeholder.jpg">
-            <p>Selecionar</p>
-        </div>
-        <div>
-            <img src="/images/placeholder.jpg">
-            <p>Selecionar</p>
-        </div>
-        <div>
-            <img src="/images/placeholder.jpg">
-            <p>Selecionar</p>
-        </div>
-        <div>
-            <img src="/images/placeholder.jpg">
-            <p>Selecionar</p>
-        </div>
-        
-        <div>
-            <img src="/images/placeholder.jpg">
-            <p>Selecionar</p>
-        </div>
-        <div>
-            <img src="/images/placeholder.jpg">
-            <p>Selecionar</p>
-        </div>
-        
-    </section>
+</section>
 
+
+<!-- Contêiner lista de memes -->
+<h2>Selecione seu meme</h2>
+<section id="divMemes" class="flex">
+
+</section>
+
+
+<!-- Contêiner seleção das imagens -->
     <section>
-        <!-- Contêiner seleção das imagens -->
 
         <div class="controles">
-        
-            <div>
-                <h2>Selecione seu meme</h2>
-                <input id="inputUploadImage" type="file">
-                <input type="radio" name="imagem-fundo" id="img1" data-caminho="images/meme-01.jpg">
-                <label for="img1">
-                    <img src="images/meme-01.jpg" class="miniatura">
-                </label>
-
-                <input type="radio" name="imagem-fundo" id="img2" data-caminho="images/meme-02.jpg">
-                <label for="img2">
-                    <img src="images/meme-02.jpg" class="miniatura">
-                </label>
-
-                <input type="radio" name="imagem-fundo" id="img3" data-caminho="images/meme-03.jpg">
-                <label for="img3">
-                    <img src="images/meme-03.jpg" class="miniatura">
-                </label>
-            </div>
-
+                
+                <input id="inputUploadImage" type="file"> 
         </div>
-        <!-- Botão de download -->
-        <div>  
-           
-        </div>
+
     </section>
-
-
 
     <script src="/scripts/dom-to-img.js"></script>
     <script src="/scripts/script.js"></script>

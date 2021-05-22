@@ -3,7 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px;
+    padding: 15px;
     
     color: white;
     align-items: center;
@@ -25,8 +25,12 @@ header a {
     list-style: none;
 }
 
-input[type="radio"] {
-    display: none;
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: rgb(231, 5, 212);
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 body {
@@ -35,16 +39,6 @@ body {
     margin: 0;
 }
 
-input[type="radio"]:checked+label img {
-    border: solid rgb(56, 56, 56);
-}
-
-.sectionmeme {
-    padding: 10px;
-    max-width: 800px;
-    display: block;
-    margin: 0 auto;
-}
 
 .sectiontexto {
     padding: 10px;
@@ -71,21 +65,15 @@ input[type="radio"]:checked+label img {
 }
 
 
-.flex > div {
+/* .flex > div {
     width: 190px;
     padding: 5px;
-}
+} */
 
 .controles {
     display: grid;
 }
 
-.miniatura {
-    display: inline-block;
-    margin: 10px;
-    width: 100px;
-    height: 100px;
-}
 
 .resultadoBG {
     margin: 0 auto;
@@ -130,10 +118,12 @@ textarea {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.download {
+button {
 
     height: 50px;
-    background-color: rgba(2, 2, 226, 0.667);
+    width: 100%;
+    border-radius: 0px 0px 8px 8px;
+    background-color: rgb(31, 129, 146);
     border: 0;
     outline: 0;
     padding: 10px 5px;

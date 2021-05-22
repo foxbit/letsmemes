@@ -9,18 +9,41 @@ let inputImage = document.getElementById('inputUploadImage')
 
 /* Lista de memes e seletor */
 
+const memes = [
+    '/pastaMemes/BBB21-Rodolffo-01.jpg', 
+    '/pastaMemes/BBB21-ArturCarla-01.jpg', 
+    '/pastaMemes/BBB21-Karol-01.jpg', 
+    '/pastaMemes/BBB21-Sarah-01.jpg', 
+    '/pastaMemes/BBB21-Fiuk-01.jpg', 
+    '/pastaMemes/BBB21-Lumena-02.jpg', 
+    '/pastaMemes/BBB21-Lumena-01.jpg', 
+    '/pastaMemes/BBB21-Gil-01.jpg', 
+    '/pastaMemes/BBB21-Fiuk-02.jpg'
+];  
 
-function selecionarFundo() {
-    let caminho = this.dataset.caminho;
+window.onload = memeListToDiv(); 
 
-    resultadoBG.style.backgroundImage = `url(${caminho})`;
+function memeListToDiv (){
+
+    const memeListElement = document.getElementById('divMemes');
+  
+for(var i = 0; i < memes.length; i++){
+
+    memeListElement.innerHTML +=  
+    `<div><img src="${memes[i]}"><button id="btnChangeMeme"   onclick="selecionarFundo(${i})">Download</button></div>`; 
+  }
+
 }
 
-opcaoImagem.forEach(function (elemento) {
-    elemento.addEventListener('input', selecionarFundo);
-})
 
-/* Upload de foto */
+function selecionarFundo(id) {
+
+    resultadoBG.style.backgroundImage = `url(${memes[id]})`;
+}
+
+
+
+/* Botao de upload de foto */
 
 window.addEventListener('load', function(){
     document.getElementById('inputUploadImage').addEventListener('change', function(){
