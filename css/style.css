@@ -85,7 +85,7 @@ body {
     box-sizing: border-box;
     word-break: break-word;
     position: relative;
-    background-image: url(/images/placeholder.jpg);
+    background-image: url(images/placeholder.jpg);
 }
 
 .resultadoUp {

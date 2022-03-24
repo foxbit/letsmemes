@@ -11,14 +11,14 @@ let inputImage = document.getElementById('inputUploadImage')
 
 const memes = [
     'pastaMemes/BBB21-Rodolffo-01.jpg', 
-    '/pastaMemes/BBB21-ArturCarla-01.jpg', 
-    '/pastaMemes/BBB21-Karol-01.jpg', 
-    '/pastaMemes/BBB21-Sarah-01.jpg', 
-    '/pastaMemes/BBB21-Fiuk-01.jpg', 
-    '/pastaMemes/BBB21-Lumena-02.jpg', 
-    '/pastaMemes/BBB21-Lumena-01.jpg', 
-    '/pastaMemes/BBB21-Gil-01.jpg', 
-    '/pastaMemes/BBB21-Fiuk-02.jpg'
+    'pastaMemes/BBB21-ArturCarla-01.jpg', 
+    'pastaMemes/BBB21-Karol-01.jpg', 
+    'pastaMemes/BBB21-Sarah-01.jpg', 
+    'pastaMemes/BBB21-Fiuk-01.jpg', 
+    'pastaMemes/BBB21-Lumena-02.jpg', 
+    'pastaMemes/BBB21-Lumena-01.jpg', 
+    'pastaMemes/BBB21-Gil-01.jpg', 
+    'pastaMemes/BBB21-Fiuk-02.jpg'
 ];  
 
 window.onload = memeListToDiv(); 
