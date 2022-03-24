@@ -10,7 +10,7 @@ let inputImage = document.getElementById('inputUploadImage')
 /* Lista de memes e seletor */
 
 const memes = [
-    '/pastaMemes/BBB21-Rodolffo-01.jpg', 
+    'pastaMemes/BBB21-Rodolffo-01.jpg', 
     '/pastaMemes/BBB21-ArturCarla-01.jpg', 
     '/pastaMemes/BBB21-Karol-01.jpg', 
     '/pastaMemes/BBB21-Sarah-01.jpg', 
