@@ -30,7 +30,8 @@ function memeListToDiv (){
 for(var i = 0; i < memes.length; i++){
 
     memeListElement.innerHTML +=  
-    `<div><img src="${memes[i]}"><button id="btnChangeMeme"   onclick="selecionarFundo(${i})">Download</button></div>`; 
+    `<div class="card-meme" style="background-image: url(${memes[i]})"> 
+    <button type="button" class="btn btn-outline-light"  id="btnChangeMeme" onclick="selecionarFundo(${i})">Usar meme</button> </div>`;
   }
 
 }

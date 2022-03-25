@@ -1,7 +1,3 @@
-<!-- 
-Para rodar o live server: CTRL SHIFT P  eescrever live server
-Para atualizar o GIT: git push -u origin main -->
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -9,61 +5,54 @@ Para atualizar o GIT: git push -u origin main -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Criador de Arte Digital</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
+    
+    <title>PokeMemes</title>
 
 </head>
 
 <body>
 
-    <header class="header">  
-            <a href="/">PokeMemes</a>
-            <nav>
-                <ul class="menu">
-                    <li>
-                        Sobre
-                    </li>
-                    <li>
-                        Contato
-                    </li>
-                </ul>
-            </nav>
-    </header>
-    
-    
-    <section class="flex">
-        <!-- Contêiner de visualização do meme -->
+<!-- Box do meme -->
 
-        <div id="divResultadoBG" class="resultadoBG">
-            <div id="divResultadoUp" class="resultadoUp">
-            </div>
-            <div id="divResultadoDown" class="resultadoDown">
-            </div>
-        </div>
+<div id="divResultadoBG" class="resultadoBG">
+    <div id="divResultadoUp" style="width: 100%; text-align: center;"></div>
+    <div id="divResultadoDown" style="width: 100%; text-align: center;"></div>
+</div>
 
+<!-- Inputs dos textos -->
 
-    <div class="sectiontexto">
-         <!-- Inputs dos textos -->
+<div class="form-floating mb-3">
+    <input type="text" class="form-control" id="textBoxUp" placeholder="Digite o texto do topo">
+    <label for="textBoxUp">Digite o texto do topo</label>
+</div>
 
-         <textarea id="textBoxUp" placeholder="Digite o texto do topo"></textarea>
-         
-         <textarea id="textBoxDown" placeholder="Digite o texto da base"></textarea>
-         
-         <button id="downloadButton" onclick="download()">Download</button>
-           
-    </div>
+<div class="form-floating">
+    <input type="text" class="form-control" id="textBoxDown" placeholder="Digite o texto de baixo">
+    <label for="textBoxDown">Digite o texto de baixo</label>
+</div>
 
-</section>
+<div class="d-grid gap-2">
+    <button type="button" class="btn btn-primary"  id="downloadButton" onclick="download()">Download</button>
+</div>
+
+<!-- Clica pra enviar a imagem
+<br>
+<div class="input-group mb-3">
+    <input type="file" class="form-control" id="inputGroupFile01">
+  </div>
+-->
 
 
-<!-- Contêiner lista de memes -->
+<!-- Conteiner de cards dos memes -->
+
 <h2>Selecione seu meme</h2>
-<section id="divMemes" class="flex">
-
-</section>
+<section id="divMemes" class="divMemes"></section>
 
 
-<!-- Contêiner seleção das imagens -->
+ <!--Contêiner seleção das imagens -->
     <section>
 
         <div class="controles">
@@ -72,9 +61,11 @@ Para atualizar o GIT: git push -u origin main -->
         </div>
 
     </section>
-
-    <script src="scripts/dom-to-img.js"></script>
-    <script src="scripts/script.js"></script>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="scripts/dom-to-img.js"></script>
+<script src="scripts/script.js"></script>
+    
 </body>
 
 </html>

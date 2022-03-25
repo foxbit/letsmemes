@@ -1,32 +1,5 @@
-.header {
-    background-color: dimgray;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 15px;
-    
-    color: white;
-    align-items: center;
-
-}
-
-header a {
-    display: block;
-    text-decoration: none;
-    color: white;
-}
-
-.menu {
-    display: flex;
-}
-
-.menu li {
-    margin-left: 20px;
-    list-style: none;
-}
-
 h2 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Montserrat, Geneva, Tahoma, sans-serif;
     text-align: center;
     color: rgb(231, 5, 212);
     padding-top: 30px;
@@ -35,102 +8,24 @@ h2 {
 
 body {
     background-color: rgb(223, 218, 192);
-
-    margin: 0;
-}
-
-
-.sectiontexto {
-    padding: 10px;
-    max-width: 400px;
-    display: grid;
-    margin: 0 auto;
-    
-}
-
-
-.flex {
-    padding: 10px;
-    max-width: 800px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-}
-
-
-.flex img {
-    max-width: 100%;
-    display: block;
-    object-fit: cover;
-}
-
-
-/* .flex > div {
-    width: 190px;
-    padding: 5px;
-} */
-
-.controles {
-    display: grid;
 }
 
 
 .resultadoBG {
+    background: url('../images/placeholder.jpg');
     margin: 0 auto;
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     background-size: cover;
     border: solid #ccc;
-    text-align: center;
-    box-sizing: border-box;
-    word-break: break-word;
-    position: relative;
-    background-image: url(images/placeholder.jpg);
-}
-
-.resultadoUp {
-    padding: 5px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.resultadoDown {
-    display: block;
-    padding: 5px;
-    width: 100%;
-    box-sizing: border-box;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-.resultado * {
-    word-break: break-word;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 
-textarea {
-    width: 380px;
-    height: 80px;
-    resize: none;
-    padding: 10px;
-    font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-button {
-
-    height: 50px;
-    width: 100%;
-    border-radius: 0px 0px 8px 8px;
-    background-color: rgb(31, 129, 146);
-    border: 0;
-    outline: 0;
-    padding: 10px 5px;
-    color: rgba(255, 255, 255, 0.667);
-    font-size: 20px;
-    cursor: pointer;
-}
 
 .textMeme {
     color: rgba(255, 255, 255, 1);
@@ -139,4 +34,26 @@ button {
     font-weight: 800;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
+    text-align: center;
+    word-break: break-word;
 }
+
+.card-meme {
+    width: 150px;
+    padding: 45px;
+    height: 150px;
+    background-color: white;
+    background-size: cover;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.divMemes {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+
+/*background: url('../images/meme-01.jpg');*/
