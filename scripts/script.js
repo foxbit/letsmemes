@@ -31,7 +31,7 @@ for(var i = 0; i < memes.length; i++){
 
     memeListElement.innerHTML +=  
     `<div class="card-meme" style="background-image: url(${memes[i]})"> 
-    <button type="button" class="btn btn-outline-light"  id="btnChangeMeme" onclick="selecionarFundo(${i})">Usar meme</button> </div>`;
+    <button type="button" class="btn btn-outline-light btn-sm"  id="btnChangeMeme" onclick="selecionarFundo(${i})">Usar meme</button> </div>`;
   }
 
 }
@@ -74,7 +74,7 @@ function download() {
     domtoimage.toPng(resultadoBG, /*{height: 800, width:800}*/)
         .then(function (urlsaida) {
             let link = document.createElement('a');
-            link.download = 'saida.png';
+            link.download = 'meme.png';
             link.href = urlsaida;
             link.click();
         })

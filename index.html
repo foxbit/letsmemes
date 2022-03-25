@@ -14,28 +14,31 @@
 </head>
 
 <body>
-
+<br>
 <!-- Box do meme -->
+<div class="container-meme">
+    <div id="divResultadoBG" class="resultadoBG mb-2">
+        <span>Clique para enviar imagem ou selecione abaixo</span>
+        <div id="divResultadoUp" style="width: 100%; text-align: center;"></div>
+        <div id="divResultadoDown" style="width: 100%; text-align: center;"></div>
+    </div>
 
-<div id="divResultadoBG" class="resultadoBG">
-    <div id="divResultadoUp" style="width: 100%; text-align: center;"></div>
-    <div id="divResultadoDown" style="width: 100%; text-align: center;"></div>
-</div>
+    <!-- Inputs dos textos -->
+    <div style="width: 350px; margin: auto;">
+        <div class="form-floating mb-2">
+            <input type="text" class="form-control" id="textBoxUp" placeholder="Digite o texto do topo">
+            <label for="textBoxUp">Digite o texto de cima</label>
+        </div>
 
-<!-- Inputs dos textos -->
+        <div class="form-floating mb-2">
+            <input type="text" class="form-control" id="textBoxDown" placeholder="Digite o texto de baixo">
+            <label for="textBoxDown">Digite o texto de baixo</label>
+        </div>
 
-<div class="form-floating mb-3">
-    <input type="text" class="form-control" id="textBoxUp" placeholder="Digite o texto do topo">
-    <label for="textBoxUp">Digite o texto do topo</label>
-</div>
-
-<div class="form-floating">
-    <input type="text" class="form-control" id="textBoxDown" placeholder="Digite o texto de baixo">
-    <label for="textBoxDown">Digite o texto de baixo</label>
-</div>
-
-<div class="d-grid gap-2">
-    <button type="button" class="btn btn-primary"  id="downloadButton" onclick="download()">Download</button>
+        <div class="d-grid gap-2">
+            <button type="button" class="btn btn-primary"  id="downloadButton" onclick="download()">Download</button>
+        </div>
+    </div>
 </div>
 
 <!-- Clica pra enviar a imagem

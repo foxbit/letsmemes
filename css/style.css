@@ -1,13 +1,12 @@
 h2 {
     font-family: Montserrat, Geneva, Tahoma, sans-serif;
     text-align: center;
-    color: rgb(231, 5, 212);
     padding-top: 30px;
     padding-bottom: 10px;
 }
 
 body {
-    background-color: rgb(223, 218, 192);
+    background-color: lavender;
 }
 
 
@@ -25,8 +24,6 @@ body {
     padding-bottom: 10px;
 }
 
-
-
 .textMeme {
     color: rgba(255, 255, 255, 1);
     font-size: 40px;
@@ -40,7 +37,7 @@ body {
 
 .card-meme {
     width: 150px;
-    padding: 45px;
+    padding: 50px;
     height: 150px;
     background-color: white;
     background-size: cover;
@@ -55,5 +52,14 @@ body {
     align-content: flex-start;
 }
 
+.container-meme {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+    width: fit-content;
+    margin: auto;
+
+}
 
 /*background: url('../images/meme-01.jpg');*/
